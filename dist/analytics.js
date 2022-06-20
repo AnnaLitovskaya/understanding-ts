@@ -1,6 +1,6 @@
 "use strict";
 console.log('Sending...');
-let logged;
+var logged;
 function sendAnalytics(data) {
     console.log(data);
     logged = true;

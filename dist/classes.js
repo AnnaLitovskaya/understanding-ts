@@ -122,4 +122,4 @@ accounting.addEmployee('Manu');
 console.log(accounting);
 // const accountingCopy = { name: 'DUMMY', describe: accounting.describe };
 // accountingCopy.describe();
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=classes.js.map
