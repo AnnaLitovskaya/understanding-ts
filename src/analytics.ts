@@ -1,4 +1,4 @@
-console.log('Sending...');
+// console.log('Sending...');
 
 let logged;
 
@@ -7,4 +7,4 @@ function sendAnalytics(data: string) {
   logged = true;
 }
 
-sendAnalytics("The data")
+// sendAnalytics("The data")
