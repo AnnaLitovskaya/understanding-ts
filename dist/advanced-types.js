@@ -4,7 +4,7 @@
 //   privileges: string[];
 // }
 var _a;
-var e1 = {
+const e1 = {
     name: 'Max',
     privileges: ['create-server'],
     startDate: new Date()
@@ -15,16 +15,16 @@ function add2(a, b) {
     }
     return a + b;
 }
-var result2 = add2('Max', ' Schwarz');
+const result2 = add2('Max', ' Schwarz');
 result2.split(' ');
-var fetchedUserData = {
+const fetchedUserData = {
     is: 'u1',
     name: 'Max',
     job: { title: 'CEO', description: 'My own company' }
 };
 console.log((_a = fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
-var userInput1 = null;
-var storedData = userInput !== null && userInput !== void 0 ? userInput : 'DEFAULT';
+const userInput1 = null;
+const storedData = userInput !== null && userInput !== void 0 ? userInput : 'DEFAULT';
 console.log(storedData);
 function printEmployeeInformation(emp) {
     console.log('Name: ' + emp.name);
@@ -36,27 +36,21 @@ function printEmployeeInformation(emp) {
     }
 }
 printEmployeeInformation({ name: 'Max', startDate: new Date() });
-var Car = /** @class */ (function () {
-    function Car() {
-    }
-    Car.prototype.drive = function () {
+class Car {
+    drive() {
         console.log('Driving...');
-    };
-    return Car;
-}());
-var Truck = /** @class */ (function () {
-    function Truck() {
     }
-    Truck.prototype.drive = function () {
+}
+class Truck {
+    drive() {
         console.log('Driving a truck...');
-    };
-    Truck.prototype.loadCargo = function (amount) {
+    }
+    loadCargo(amount) {
         console.log('Loading cargo ...' + amount);
-    };
-    return Truck;
-}());
-var v1 = new Car();
-var v2 = new Truck();
+    }
+}
+const v1 = new Car();
+const v2 = new Truck();
 function useVehicle(vehicle) {
     vehicle.drive();
     if (vehicle instanceof Truck) {
@@ -66,7 +60,7 @@ function useVehicle(vehicle) {
 useVehicle(v1);
 useVehicle(v2);
 function moveAnimal(animal) {
-    var speed;
+    let speed;
     switch (animal.type) {
         case 'bird':
             speed = animal.flyingSpeed;
@@ -80,11 +74,11 @@ moveAnimal({ type: 'bird', flyingSpeed: 10 });
 // const userInputElement = <HTMLInputElement>document.getElementById('user-output')!;
 // const userInputElement = document.getElementById('user-output')! as HTMLInputElement;
 // userInputElement.value = 'Hi there!'
-var userInputElement = document.getElementById('user-output');
+const userInputElement = document.getElementById('user-output');
 if (userInputElement) {
     userInputElement.value = 'Hi there!';
 }
-var errorBag = {
+const errorBag = {
     email: 'Not a valid email!',
     userName: 'Must start with a capital character!'
 };

@@ -174,4 +174,4 @@ courseForm.addEventListener('submit', event => {
     }
     console.log(createdCourse);
 });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=decorators.js.map
